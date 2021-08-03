@@ -4,21 +4,21 @@
 
 Bexpress Bibliotheque numérique
 
-## Install the dependencies
+## Installer les dépenses 
 ```bash
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Mode de développement (hot-code reloading, error reporting, etc.)
 ```bash
 quasar dev
 ```
 
 
-### Build the app for production
+### Build pour la production
 ```bash
 quasar build
 ```
 
-### Customize the configuration
+### Configurations
 See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
