@@ -1,5 +1,5 @@
 
-![Dependenses](https://img.shields.io/github/issues/{vincejs77}/{bexpress.books}.svg)
+![Dependenses](https://img.shields.io/github/issues/{vincejs77}/{bexpressbooks}.svg)
 
 # bexpress.books
 
