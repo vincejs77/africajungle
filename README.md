@@ -1,8 +1,10 @@
 # bexpress.books
-![Dependenses](https://badgen.net/npm/dependents/got)
-![Logo](https://bexpressbooks-one.vercel.app/logo.png)
+![Dependenses](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Dependenses](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 
 Bexpress Bibliotheque numérique
+
+![Logo](https://bexpressbooks-one.vercel.app/logo.png)
 
 ## Installer les dépenses 
 ```bash
