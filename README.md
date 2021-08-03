@@ -2,10 +2,6 @@
 
 ![Logo](https://bexpressbooks-one.vercel.app/logo.png)
 
-
-
-# bexpressBooksShop (bexpress.books.shop)
-
 Bexpress Bibliotheque numérique
 
 ## Install the dependencies
