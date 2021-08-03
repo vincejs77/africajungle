@@ -11,7 +11,7 @@ Bexpress Bibliotheque numérique
 
 ![Logo](https://bexpressbooks-one.vercel.app/logo.png)
 
-## Installer les dépenses 
+## Installer les dépendances
 ```bash
 npm install
 ```
