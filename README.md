@@ -19,16 +19,33 @@ Bexpress Bibliotheque numérique
 
 ![Logo](https://bexpressbooks-one.vercel.app/logo.png)
 
-## Installer les dépendances
+
+## Prerequisites
+
+* PHP >= 5.3.7
+* cURL Extension
+* Node >= 12.22.1
+
+
+## Installations
 ```bash
+
+# Clone the repository (stable branch)
+git clone -b master https://github.com/vincejs77/bexpress.books.git bexpressbooks
+# OR download the latest release at: https://github.com/leon-ai/leon/releases/latest
+
 npm install
+
 ```
 
-### Mode de développement (hot-code reloading, error reporting, etc.)
+### Dev mode (hot-code reloading, error reporting, etc.)
 ```bash
 quasar dev
 ```
 
+## 📚 Documentation
+
+Non disponible pour le moment
 
 ### Build pour la production
 ```bash
