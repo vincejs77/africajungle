@@ -48,4 +48,4 @@ quasar build
 ```
 
 ### Configurations
-See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+Voir [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
