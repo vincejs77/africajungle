@@ -29,7 +29,7 @@ Bexpress Bibliotheque numérique
 
 # Clone the repository (stable branch)
 git clone -b master https://github.com/vincejs77/bexpress.books.git bexpressbooks
-# OR download the latest release at: https://github.com/leon-ai/leon/releases/latest
+# OR download code
 
 npm install
 
