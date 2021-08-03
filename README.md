@@ -23,7 +23,7 @@ Bexpress Bibliotheque numérique
 ## Prerequisites
 
 * PHP >= 5.3.7
-* cURL Extension
+* NPM >= 6.13.4
 * Node >= 12.22.1
 
 
