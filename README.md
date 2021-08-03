@@ -1,5 +1,5 @@
 # bexpress.books
-(https://badgen.net/npm/dependents/got)
+[Dependenses](https://badgen.net/npm/dependents/got)
 ![Logo](https://bexpressbooks-one.vercel.app/logo.png)
 
 Bexpress Bibliotheque numérique
