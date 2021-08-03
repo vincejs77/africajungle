@@ -1,0 +1,161 @@
+// app global css in SCSS form
+@font-face {
+    font-family: bexressfont bold;
+    src: url("./font/HelveticaNeueLTStd-Bd.otf");
+}
+
+@font-face {
+    font-family: bexressfont medium;
+    src: url("./font/HelveticaNeueLTStd-Md.otf");
+}
+
+@font-face {
+    font-family: bexressfont regular;
+    src: url("./font/HelveticaNeueLTStd-Roman.otf");
+}
+
+@font-face {
+    font-family: bexressfont light;
+    src: url("./font/HelveticaNeueLTStd-Lt.otf");
+}
+
+@font-face {
+    font-family: bexressfont thin;
+    src: url("./font/HelveticaNeueLTStd-Th.otf");
+}
+// declare a class which applies it
+body {
+    font-family: "bexressfont regular";
+    color: $dark;
+    line-height: 1.5 !important;
+}
+
+@import "./main.scss";
+
+//config
+@import "./config/ignore.scss";
+@import "./config/swipper.scss";
+
+//components
+@import "./components/card.scss";
+
+//pages
+@import "./pages/livres.scss";
+@import "./pages/home.scss";
+
+//pages Admin
+@import "./pages/admin/a.login.scss";
+@import "./pages/admin/a.addlivre.scss";
+
+.bXYfont {
+    &--bold {
+        font-family: "bexressfont bold" !important;
+    }
+    &--medium {
+        font-family: "bexressfont medium" !important;
+    }
+    &--light {
+        font-family: "bexressfont light" !important;
+    }
+    &--thin {
+        font-family: "bexressfont thin" !important;
+    }
+}
+
+.bXYfs {
+    &--48 {
+        font-size: 48px !important;
+    }
+    &--36 {
+        font-size: 36px !important;
+    }
+    &--32 {
+        font-size: 32px !important;
+    }
+    &--28 {
+        font-size: 28px !important;
+    }
+    &--20 {
+        font-size: 20px !important;
+    }
+    &--24 {
+        font-size: 24px !important;
+    }
+    &--18 {
+        font-size: 18px !important;
+    }
+    &--16 {
+        font-size: 16px !important;
+    }
+    &--14 {
+        font-size: 14px !important;
+    }
+    &--12 {
+        font-size: 12px !important;
+    }
+    &--10 {
+        font-size: 10px !important;
+    }
+}
+
+.bXYcolor {
+    &--p {
+        color: $primary !important;
+    }
+    &--w {
+        color: $white !important;
+    }
+    &--s {
+        color: $secondary !important;
+    }
+    &--b {
+        color: $dark !important;
+    }
+    &--g {
+        color: $gray !important;
+    }
+    &--g1 {
+        color: $gray1 !important;
+    }
+}
+
+.bXYbg {
+    &--p {
+        background: $primary !important;
+    }
+    &--s {
+        background: $secondary !important;
+    }
+    &--b {
+        background: $dark !important;
+        color: $white;
+    }
+    &--w {
+        background: $white !important;
+    }
+    &--g {
+        background: $gray !important;
+    }
+    &--g1 {
+        background: $gray !important;
+    }
+    &--p-w {
+        background: rgba($primary, 2%) !important;
+    }
+    &--linear {
+        background-image: $linear;
+        color: $white;
+    }
+}
+
+.bXYbtn--small {
+    font-size: 10px !important;
+    min-height: 0px !important;
+    height: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.q-notification {
+    font-size: 12px !important;
+}

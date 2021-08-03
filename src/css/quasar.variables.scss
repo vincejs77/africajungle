@@ -1,0 +1,51 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$white: #ffffff;
+$primary: rgb(102, 94, 255);
+$secondary: #3498fd;
+$accent: #7972ff;
+
+$dark: #2a2e43;
+$gray: #78849e;
+$gray1: #c5d0de;
+
+$linear: linear-gradient(134.72deg, #7972ff 0%, #665eff 99.54%);
+
+$positive: #3ac6d9;
+$negative: #e63c3c;
+$info: #31ccec;
+$warning: #f2c037;
+
+::-webkit-scrollbar {
+    width: 11px !important;
+    height: 11px !important;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #c5d0dea6 55%, #c5d0de9a 58%) !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff !important;
+    border-radius: 10px !important;
+    box-shadow: inset 0px 10px 12px 0px #f0f0f0 !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}

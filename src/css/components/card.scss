@@ -1,0 +1,389 @@
+.bXYcard {
+    max-width: 250px;
+    padding: 1rem;
+    box-shadow: none;
+    border: 1px solid rgba($gray1, 30%) !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    white-space: normal !important;
+
+    .header {
+        padding: 0px !important;
+    }
+
+    .footer {
+        position: absolute;
+        background: $white;
+        left: -1px;
+        right: -1px;
+        bottom: -3rem;
+        z-index: 999;
+        border-left: 1px solid rgba($gray1, 30%);
+        border-right: 1px solid rgba($gray1, 30%);
+        border-bottom: 1px solid rgba($gray1, 30%) !important;
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+        opacity: 0;
+        box-shadow: -10px 53px 48px -10px rgba(102, 94, 255, 0.21);
+        -webkit-box-shadow: -10px 53px 48px -10px rgba(102, 94, 255, 0.21);
+        -moz-box-shadow: -10px 53px 48px -10px rgba(102, 94, 255, 0.21);
+    }
+
+    &:hover {
+        box-shadow: 1px 4px 101px -33px rgba(102, 94, 255, 0.27);
+        -webkit-box-shadow: 1px 4px 101px -33px rgba(102, 94, 255, 0.27);
+        -moz-box-shadow: 1px 4px 101px -33px rgba(102, 94, 255, 0.27);
+        .footer {
+            height: auto !important;
+            width: auto !important;
+            overflow: visible;
+            opacity: 1;
+        }
+    }
+    .q-btn {
+        font-size: 14px !important;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        width: 40px;
+        i {
+            font-size: 16px !important;
+        }
+    }
+
+    .img {
+        width: 100%;
+        height: 220px !important;
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        object-fit: contain;
+
+        img {
+            width: 100%;
+        }
+    }
+    .tags {
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        .q-chip {
+            font-size: 13px !important;
+        }
+    }
+    .title {
+        width: 100%;
+        overflow: hidden;
+        font-size: 16px;
+        font-family: "bexressfont bold" !important;
+        margin: 0.5rem 0rem;
+        white-space: normal !important;
+    }
+    .starts {
+        margin-top: 1rem !important;
+    }
+}
+.bXYcard--rec {
+    display: flex !important;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: none;
+    border: 1px solid rgba($gray1, 30%) !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    position: relative;
+    white-space: normal !important;
+
+    .q-btn {
+        top: calc(50% - 20px) !important;
+        right: calc(50% - 20px) !important;
+        padding: 0rem 0.7rem !important;
+        opacity: 0;
+        height: 20px !important;
+        i {
+            font-size: 14px !important;
+        }
+    }
+
+    &:hover {
+        .q-btn {
+            opacity: 1;
+        }
+    }
+
+    .img {
+        width: 150px;
+        height: 100% !important;
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+
+        img {
+            width: 100%;
+            height: 100% !important;
+            object-fit: cover;
+        }
+    }
+    .text {
+        padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+    }
+    .title {
+        overflow: hidden;
+        font-size: 16px;
+        font-family: "bexressfont bold" !important;
+        margin: 0.5rem 0rem;
+        overflow: hidden;
+
+        .q-item {
+            padding: 0px !important;
+            margin: 0px !important;
+            height: 0px !important;
+            min-height: 20px !important;
+            display: inline-block;
+            width: 295px;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+            &:hover {
+                color: $primary;
+            }
+            .q-focus-helper {
+                display: none !important;
+            }
+        }
+    }
+
+    .tags {
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        width: 300px;
+        margin-left: -0.5rem;
+        .q-chip {
+            font-size: 12px !important;
+        }
+    }
+    .text-caption {
+        font-size: 12px !important;
+    }
+
+    .footer {
+    }
+}
+
+.bXYcard--hist {
+    display: flex !important;
+    width: 315px;
+    padding: 0rem;
+    box-shadow: none;
+    border: 1px solid rgba($gray1, 30%) !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    position: relative;
+    white-space: normal !important;
+    overflow: hidden;
+
+    .q-btn {
+        top: calc(50% - 20px) !important;
+        right: calc(50% - 20px) !important;
+        padding: 0rem 0.7rem !important;
+        opacity: 0;
+        height: 20px !important;
+        i {
+            font-size: 14px !important;
+        }
+    }
+
+    &:hover {
+        .q-btn {
+            opacity: 1;
+        }
+    }
+
+    .img {
+        width: 100px;
+        height: 100px !important;
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+
+        img {
+            width: 100%;
+            height: 100% !important;
+            object-fit: cover;
+        }
+    }
+    .text {
+        padding: 1rem 1rem 1rem 0rem;
+    }
+    .title {
+        overflow: hidden;
+        font-size: 14px;
+        font-family: "bexressfont bold" !important;
+        margin: 0.5rem 0rem;
+        white-space: nowrap;
+
+        .q-item {
+            padding: 0px !important;
+            margin: 0px !important;
+            height: 0px !important;
+            min-height: 20px !important;
+
+            display: inline-block;
+            width: 160px;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+
+            &:hover {
+                color: $primary;
+            }
+            .q-focus-helper {
+                display: none !important;
+            }
+        }
+    }
+
+    .tags {
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        width: 150px;
+        margin-left: -0.5rem;
+        .q-chip {
+            font-size: 11px !important;
+        }
+    }
+
+    .text-caption {
+        font-size: 12px !important;
+    }
+}
+
+.bXYcard--other {
+    display: flex !important;
+    width: 317.2px;
+    padding: 0rem;
+    box-shadow: none;
+    border: 1px solid rgba($gray1, 30%) !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    position: relative;
+    white-space: normal !important;
+    overflow: hidden;
+
+    .q-btn {
+        top: calc(50% - 20px) !important;
+        right: calc(50% - 20px) !important;
+        padding: 0rem 0.7rem !important;
+        opacity: 0;
+        height: 20px !important;
+        i {
+            font-size: 14px !important;
+        }
+    }
+
+    &:hover {
+        .q-btn {
+            opacity: 1;
+        }
+    }
+
+    .img {
+        width: 100px;
+        height: 100px !important;
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+
+        img {
+            width: 100%;
+            height: 100% !important;
+            object-fit: cover;
+        }
+    }
+    .text {
+        padding: 1rem 1rem 1rem 0rem;
+    }
+    .title {
+        overflow: hidden;
+        font-size: 14px;
+        font-family: "bexressfont bold" !important;
+        margin: 0.5rem 0rem;
+        white-space: nowrap;
+
+        .q-item {
+            padding: 0px !important;
+            margin: 0px !important;
+            height: 0px !important;
+            min-height: 20px !important;
+
+            display: inline-block;
+            width: 160px;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+
+            &:hover {
+                color: $primary;
+            }
+            .q-focus-helper {
+                display: none !important;
+            }
+        }
+    }
+
+    .tags {
+        overflow: hidden;
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        width: 150px;
+        margin-left: -0.5rem;
+        .q-chip {
+            font-size: 11px !important;
+        }
+    }
+
+    .text-caption {
+        font-size: 12px !important;
+    }
+}
