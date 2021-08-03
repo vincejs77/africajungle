@@ -6,7 +6,7 @@
 ![Dependenses](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 ![Dependenses](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![Dependenses](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Dependenses](https://img.shields.io/github/license/{vincejs77}/{repo-name}.svg)
+![Dependenses](https://img.shields.io/github/license/{vincejs77}/{bexpress.books}.svg)
 
 
 
