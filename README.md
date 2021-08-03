@@ -3,4 +3,4 @@
 Bibliotheque numérique
 
 
-![Image of Yaktocat](https://bexpressbooks.vercel.app/logo.png)
+![Logo](https://bexpressbooks-one.vercel.app/logo.png)
