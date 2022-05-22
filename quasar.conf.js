@@ -133,9 +133,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `bexpressBooksShop`,
-        short_name: `bexpressBooksShop`,
-        description: `Bexpress Books Shop`,
+        name: `AfrikaJungle`,
+        short_name: `AfrikaJungle`,
+        description: `Afrika Jungle`,
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",

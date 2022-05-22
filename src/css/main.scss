@@ -4,12 +4,20 @@
     }
 }
 
+.AFJ--a {
+    color: #047c7c !important;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .padding--none {
     padding: 0px !important;
     margin: 0px !important;
 }
 
-.bXYcontainer {
+.AFJcontainer {
     width: calc(100% - 40px);
     max-width: 1200px;
     margin-left: auto;
@@ -19,15 +27,15 @@
         width: 1000px;
     }
 }
-.bXYfull-width {
+.AFJfull-width {
     min-width: calc(100% + 24px) !important;
 }
-.bXYmain__container {
+.AFJmain__container {
     overflow: hidden !important;
     width: 100%;
 }
 
-.bXYpage {
+.AFJpage {
     white-space: wrap !important;
     padding-bottom: 5rem;
     &__header {
@@ -95,7 +103,7 @@
     }
 }
 
-.bXYcomponent {
+.AFJcomponent {
     &--control {
         .q-item {
             border: 1px solid rgba($gray1, 30%) !important;
@@ -119,7 +127,7 @@
                 -moz-border-radius: 0px 50px 50px 0px;
                 -ms-border-radius: 0px 50px 50px 0px;
                 -o-border-radius: 0px 50px 50px 0px;
-                background: #665eff !important;
+                background: #047c7c !important;
             }
             .q-field__inner {
                 background: $white !important;
@@ -128,7 +136,7 @@
     }
 }
 
-.bXYbox--container {
+.AFJbox--container {
     margin: 0rem 2rem;
     &--size-1 {
         width: 350px;
@@ -158,7 +166,7 @@
     margin-left: 3px;
     margin-right: 5px;
 }
-.bXYbox {
+.AFJbox {
     background: $white;
     padding: 2rem;
     font-size: 14px;
@@ -190,7 +198,7 @@
         font-size: 14px !important;
     }
 }
-.bXYbox__control {
+.AFJbox__control {
     margin-top: 2rem;
     & > .q-btn:last-child {
         margin-top: 1rem;
@@ -207,7 +215,7 @@
         }
     }
 }
-.bXYlink {
+.AFJlink {
     &--simple {
         font-size: 12px !important;
         padding: 0rem !important;
@@ -215,7 +223,7 @@
     }
 }
 
-.bXYinput {
+.AFJinput {
     position: relative;
     .label {
         font-size: 14px !important;
@@ -231,18 +239,18 @@
     }
     height: 40px !important;
 
-    &.bXYdropdown--simple {
+    &.AFJdropdown--simple {
         background: transparent !important;
         color: $dark !important;
         font-family: "bexressfont regular" !important;
     }
-    &.bXYdropdown {
+    &.AFJdropdown {
         background: $primary !important;
         color: $white !important;
         font-family: "bexressfont regular" !important;
     }
 }
-.q-btn.bXYbtn {
+.q-btn.AFJbtn {
     height: 40px !important;
     border-radius: 7px !important;
     -webkit-border-radius: 7px !important;
@@ -255,7 +263,7 @@
     }
 }
 
-.q-item.bXYitem {
+.q-item.AFJitem {
     min-height: 0px !important;
     padding: 0px !important;
     .q-btn {
@@ -263,7 +271,7 @@
     }
 }
 
-.q-list.bXYlist {
+.q-list.AFJlist {
     padding: 8px 8px !important;
 
     .q-item {
@@ -274,7 +282,7 @@
     }
 }
 
-.bXYgrid {
+.AFJgrid {
     display: grid !important;
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)) !important;
     grid-gap: 20px;
@@ -283,7 +291,7 @@
     min-width: 800px !important;
 }
 
-.bXYgrid--flex {
+.AFJgrid--flex {
     display: flex;
 }
 
@@ -350,4 +358,61 @@
         overflow: hidden !important;
         border-top: 1px solid rgba($gray1, 30%) !important;
     }
+}
+
+#share {
+    width: 100%;
+}
+
+/* buttons */
+
+#share a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 8px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity 0.15s linear;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#share a:hover {
+    opacity: 1;
+}
+
+/* icons */
+
+#share i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* colors */
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+    background: #55acee;
+}
+
+.googleplus {
+    background: #dd4b39;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.pinterest {
+    background: #cb2027;
 }

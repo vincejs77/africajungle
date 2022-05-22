@@ -1,4 +1,4 @@
-.bXYline {
+.AFJline {
     position: relative;
     span {
         &:before {
@@ -21,7 +21,7 @@
     }
 }
 
-.bXYnotification {
+.AFJnotification {
     .q-timeline__dot {
         width: 10px !important;
         &::before {
@@ -60,7 +60,7 @@
     }
 }
 
-.bXYtab {
+.AFJtab {
     &--simple {
         .q-tab {
             min-height: 0px !important;

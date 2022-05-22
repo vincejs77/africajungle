@@ -2,8 +2,8 @@
   <q-page class="">
     <q-dialog v-model="dialogAuth" persistent>
       <div>
-        <div class="bXYcontainer text-center flex flex-center justify-center">
-          <div class="bXYbg--w bXYbox" style="width: 400px">
+        <div class="AFJcontainer text-center flex flex-center justify-center">
+          <div class="AFJbg--w AFJbox" style="width: 400px">
             <div class="row justify-between">
               <div class="flex flex-center">
                 <q-item clickable tag="a" to="/" href="/" class="flex flex-center">
@@ -13,14 +13,14 @@
               <div class="flex-center">
                 <q-tabs active-color="primary">
                   <q-route-tab
-                    class="bXYfont--medium"
+                    class="AFJfont--medium"
                     name="connexion"
                     label="Connexion"
                     :to="linkLogin"
                     exact
                   />
                   <q-route-tab
-                    class="bXYfont--medium q-ml-lg"
+                    class="AFJfont--medium q-ml-lg"
                     name="inscription"
                     label="Inscription"
                     :to="linkRegister"
@@ -29,9 +29,7 @@
                 </q-tabs>
               </div>
             </div>
-            <div class="q-mb-l">
-              <img src="others/5.png" style="max-width: 200px" />
-            </div>
+
             <div class="flex flex-center">
               <router-view />
             </div>

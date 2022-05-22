@@ -1,15 +1,21 @@
 <template>
   <div class="flex flex-center">
     <div>
-      <h1 class="bXYfont--bold bXYfs--24 default-title">Hey ! Bon retour</h1>
+      <div class="q-mb-l q-mt-lg">
+        <img src="others/13.png" style="max-width: 300px" />
+      </div>
+      <h1 class="AFJfont--bold AFJfs--24 default-title">
+        Bon retour sur
+        <span class="text-primary">AfrikaJungle</span>
+      </h1>
       <div>
         <q-form
           @submit="onSubmit"
           @reset="onReset"
-          class="q-gutter-md"
+          class="q-gutter-"
           style="width: 300px"
         >
-          <div class="bXYinput text-left">
+          <div class="AFJinput text-left">
             <span class="label">Indentifiant</span>
             <q-input
               filled
@@ -23,7 +29,7 @@
             />
           </div>
 
-          <div class="bXYinput text-left">
+          <div class="AFJinput text-left q-mt-lg">
             <span class="label">Mot de passe</span>
             <q-input
               filled
@@ -40,7 +46,7 @@
             />
           </div>
 
-          <div class="flex justify-between">
+          <div class="flex justify-between q-mt-lg">
             <q-checkbox
               style="margin-left: -10px"
               name="accept_agreement"
@@ -53,23 +59,23 @@
               label="Se connecter"
               type="submit"
               color="primary"
-              class="full-width bXYbtn"
+              class="full-width AFJbtn q-mt-lg"
               @click="logNow()"
             />
           </div>
         </q-form>
         <div class="q-mt-md q-mL-md tex-center flex row justify-between">
           <q-item class="caption tex-center">
-            <span class="bXYcolor--g bXYfs--12">© 2021 Bexpress Books, Inc.</span>
+            <span class="AFJcolor--g AFJfs--12">© 2022 AfrikaJungle, Inc.</span>
           </q-item>
           <q-btn
-            class="bXYbtn--small"
+            class="AFJbtn--small"
             icon="eva-github"
             text-color="primary"
             label="Sources"
             target="_blank"
             type="a"
-            href="https://github.com/vincejs77/bexpress.books"
+            href=""
           ></q-btn>
         </div>
       </div>
@@ -150,7 +156,7 @@ export default defineComponent({
 
     onMounted(() => {
       function onReset() {
-        console.log("merde de tout");
+        console.log("========== br ========");
       }
       onReset();
     });

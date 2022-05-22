@@ -1,15 +1,20 @@
 <template>
   <div class="flex flex-center">
     <div>
-      <h1 class="bXYfont--bold bXYfs--24 default-title">Rejoignez-nous</h1>
+      <div class="q-mb-lg q-mt-lg">
+        <img src="others/14.png" style="max-width: 300px" />
+      </div>
+      <h1 class="AFJfont--bold AFJfs--24 default-title">
+        Rejoignez <span class="text-primary">AfrikaJungle</span>
+      </h1>
       <div>
         <q-form
           @submit="onSubmit"
           @reset="onReset"
-          class="q-gutter-md"
+          class="q-gutter-"
           style="width: 300px"
         >
-          <div class="bXYinput text-left">
+          <div class="AFJinput text-left">
             <span class="label">Indentifiant</span>
             <q-input
               filled
@@ -23,7 +28,7 @@
             />
           </div>
 
-          <div class="bXYinput text-left">
+          <div class="AFJinput text-left q-mt-lg">
             <span class="label">Mot de passe</span>
             <q-input
               filled
@@ -40,22 +45,22 @@
             />
           </div>
 
-          <div>
+          <div class="q-mt-lg">
             <q-btn
               label="S'inscrire"
               type="submit"
               color="primary"
-              class="q-mt-sm full-width bXYbtn"
+              class="q-mt-sm full-width AFJbtn"
               @click="regNow()"
             />
           </div>
         </q-form>
         <div class="q-mt-md q-mL-md tex-center flex row justify-between">
           <q-item class="caption tex-center">
-            <span class="bXYcolor--g bXYfs--12">© 2021 Bexpress Books, Inc.</span>
+            <span class="AFJcolor--g AFJfs--12">© 2022 AfrikaJungle, Inc.</span>
           </q-item>
           <q-btn
-            class="bXYbtn--small"
+            class="AFJbtn--small"
             icon="eva-github"
             text-color="primary"
             label="Sources"
@@ -117,6 +122,7 @@ export default defineComponent({
         .then((r) => {
           if (r.data[0].code === 1) {
             notifSucReg();
+            console.log(r);
           } else {
             notifErrReg();
           }

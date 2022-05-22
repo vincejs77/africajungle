@@ -40,14 +40,10 @@ body {
 @import "./components/card.scss";
 
 //pages
-@import "./pages/livres.scss";
+@import "./pages/afj.scss";
 @import "./pages/home.scss";
 
-//pages Admin
-@import "./pages/admin/a.login.scss";
-@import "./pages/admin/a.addlivre.scss";
-
-.bXYfont {
+.AFJfont {
     &--bold {
         font-family: "bexressfont bold" !important;
     }
@@ -62,7 +58,7 @@ body {
     }
 }
 
-.bXYfs {
+.AFJfs {
     &--48 {
         font-size: 48px !important;
     }
@@ -98,7 +94,7 @@ body {
     }
 }
 
-.bXYcolor {
+.AFJcolor {
     &--p {
         color: $primary !important;
     }
@@ -119,7 +115,7 @@ body {
     }
 }
 
-.bXYbg {
+.AFJbg {
     &--p {
         background: $primary !important;
     }
@@ -148,7 +144,7 @@ body {
     }
 }
 
-.bXYbtn--small {
+.AFJbtn--small {
     font-size: 10px !important;
     min-height: 0px !important;
     height: 0px !important;

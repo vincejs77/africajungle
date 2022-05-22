@@ -15,7 +15,7 @@ select:-webkit-autofill:focus {
 .q-drawer--bordered {
     overflow: visible;
 }
-// .bXYheader {
+// .AFJheader {
 //     background: $white;
 //     width: 100%;
 //     position: fixed;
@@ -42,7 +42,7 @@ select:-webkit-autofill:focus {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
-    &.bXYskeleton {
+    &.AFJskeleton {
         &--img {
             border-radius: 7px;
             -webkit-border-radius: 7px;
@@ -71,12 +71,13 @@ select:-webkit-autofill:focus {
 
 .q-drawer {
     top: 0px !important;
-    width: 80px !important;
+    width: 100px !important;
     border-right: 1px solid rgba($gray1, 40%);
     padding-top: 1rem;
+    background: rgba($dark, 100%) !important;
 }
-.bXYdrawer {
-    background: $white !important;
+.AFJdrawer {
+    background: rgba($dark, 100%) !important;
     overflow: hidden !important;
 
     .q-drawer {
@@ -90,12 +91,17 @@ select:-webkit-autofill:focus {
             position: relative;
         }
     }
+
+    span {
+        font-size: 14px !important;
+    }
     .q-list {
         margin-top: 50px;
     }
     .q-item {
         background: none !important;
         position: relative;
+        margin-top: 0.5rem;
 
         &:hover {
             background: none !important;
@@ -109,8 +115,7 @@ select:-webkit-autofill:focus {
     }
 
     .q-router-link--active.q-router-link--exact-active {
-        color: $primary !important;
-        color: var(--q-color-primary) !important;
+        color: $white !important;
         position: relative;
         background: none !important;
 
@@ -128,10 +133,13 @@ select:-webkit-autofill:focus {
             -o-border-radius: 0px 50px 50px 0px;
             background: $primary;
         }
+        span {
+            color: $white !important;
+        }
         .q-item__section--side {
             background: none !important;
             i {
-                color: $primary !important;
+                color: $white !important;
             }
             .eva-home-outline::before {
                 content: "\eaf8" !important;
@@ -161,7 +169,7 @@ select:-webkit-autofill:focus {
     }
 }
 
-.bXYtooltip {
+.AFJtooltip {
     overflow: visible !important;
     z-index: 9999 !important;
     position: relative;
@@ -324,8 +332,8 @@ select:-webkit-autofill:focus {
     font-size: 11px !important;
 }
 
-.bXYfield--container-full {
-    .bXYinput {
+.AFJfield--container-full {
+    .AFJinput {
         width: 100% !important;
     }
     .q-field__control {
@@ -333,8 +341,8 @@ select:-webkit-autofill:focus {
         min-width: 100% !important;
     }
 }
-.bXYfield--container-half {
-    .bXYinput {
+.AFJfield--container-half {
+    .AFJinput {
         width: calc(50% - 16px) !important;
     }
     .q-field__control {
@@ -396,11 +404,11 @@ select:-webkit-autofill:focus {
     padding: 0px 0;
 }
 
-.bXYform .bXYfield--custom {
+.AFJform .AFJfield--custom {
     margin-top: 1rem !important;
 }
 
-.bXYcustom--select {
+.AFJcustom--select {
     .q-field__inner,
     .q-field__control,
     .q-field__native {
@@ -539,7 +547,7 @@ select:-webkit-autofill:focus {
     i {
         font-size: 16px !important;
     }
-    &.bXYcolor--white {
+    &.AFJcolor--white {
         border: 1px solid rgba($gray1, 30%) !important;
     }
 }

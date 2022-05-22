@@ -6,11 +6,11 @@
       @click.capture="drawerClick"
       :breakpoint="500"
       bordered
-      class="bg-white bXYdrawer"
+      class="bg-white AFJdrawer"
       :width="80"
     >
-      <q-item class="logo">
-        <span> <img src="logo.png" /> </span>
+      <q-item class="logo flex flex-center">
+        <span> <img src="logo.png" class="-q-mt-lg" style="margin-top: -15px" /> </span>
       </q-item>
       <q-scroll-area overflow-hidden class="fit relative-position">
         <q-list>
@@ -23,15 +23,15 @@
           clickable
           @click="logOut()"
           tag="a"
-          class="bottom flex flex-center"
+          class="bottom flex flex-center text-white"
         >
-          <q-icon name="logout" size="24px">
+          <q-icon name="logout" size="24px" content-style="color-white font-size: 12px">
             <q-tooltip
               anchor="center right"
               transition-show="scale"
               transition-hide="scale"
               self="center left"
-              class="bg-dark bXYtooltip bXYtooltip--r"
+              class="bg-dark AFJtooltip AFJtooltip--r"
               content-style="font-size: 12px"
             >
               Deconnexion
@@ -46,61 +46,22 @@
             color="primary"
             text-color="white"
           >
-            <span class="x bXYfont--bold">{{ sessionInfos[0].v3[0] }}</span>
+            <span class="x AFJfont--bold">{{ sessionInfos[0].v3[0] }}</span>
           </q-avatar>
         </q-item>
       </q-list>
     </q-drawer>
-    <q-page-container class="bXYbg--w">
+    <q-page-container class="AFJbg--w">
       <q-header class="full-width">
         <q-toolbar class="text-dark bg-white full-width">
-          <div class="flex flex-center full-width">
+          <div class="flex flex-center AFJcontainer AFJcontainer__fxs overflow-hidden">
             <!-- <q-item>
             <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
           </q-item> -->
             <q-toolbar-title class="flex flex-sm-center">
-              <q-btn
-                color="primary"
-                icon="eva-funnel-outline"
-                text-color="white"
-                class="bXYcolor--white q-mr-lg bXYbtn"
-                label="Filter"
-              />
-
-              <q-input
-                filled
-                v-model="ph"
-                placeholder="Rechercher sur bexpressBook"
-                class="flex flex-sm-center"
-              >
-                <template v-slot:append>
-                  <q-icon name="close" @click="text = ''" class="cursor-pointer" />
-                  <q-icon name="eva-search" size="18px" />
-                </template>
-              </q-input>
-              <div class="heade__button q-ml-lg">
-                <q-item
-                  clickable
-                  class="flex flex-center relative bXYcolor--g q-mr-xl"
-                  to="#"
-                >
-                  <q-icon name="eva-clock-outline" style="font-size: 16px"> </q-icon>
-                  <q-tooltip
-                    transition-show="scale"
-                    transition-hide="scale"
-                    class="bg-dark bXYtooltip bXYtooltip--b"
-                    content-style="font-size: 12px"
-                  >
-                    Historique
-                  </q-tooltip>
-                </q-item>
-              </div>
-            </q-toolbar-title>
-
-            <div class="flex flex-center">
-              <q-item clickable class="flex flex-center bXYcolor--g bXYitem">
-                <q-btn-dropdown label="Decouvrir" class="bXYdropdown--simple">
-                  <q-list class="bXYlist">
+              <q-item clickable class="flex flex-center AFJcolor--g AFJitem">
+                <q-btn-dropdown label="Decouvrir" class="AFJdropdown--simple">
+                  <q-list class="AFJlist">
                     <q-item clickable v-close-popup @click="onItemClick">
                       <q-item-section>
                         <q-item-label>A propos</q-item-label>
@@ -122,11 +83,13 @@
                 </q-btn-dropdown> </q-item
               ><q-item
                 clickable
-                class="flex flex-center bXYcolor--g bXYitem q-mr-lg"
+                class="flex flex-center AFJcolor--g AFJitem q-mr-lg"
                 to="#"
               >
               </q-item>
+            </q-toolbar-title>
 
+            <div class="flex flex-center">
               <div class="heade__button">
                 <q-item
                   clickable
@@ -139,12 +102,12 @@
                     <q-avatar
                       color="primary"
                       text-color="white"
-                      class="bXYfont--bold bXYfs--28"
+                      class="AFJfont--bold AFJfs--28"
                     >
                       {{ sessionInfos[0].v3[0] }}
                     </q-avatar>
                     <span v-if="sessionExists()">Bonjour, </span>
-                    <span v-if="sessionExists()" class="bXYfont--bold q-ml-xs">{{
+                    <span v-if="sessionExists()" class="AFJfont--bold q-ml-xs">{{
                       sessionInfos[0].v3
                     }}</span>
                   </q-chip>
@@ -153,7 +116,7 @@
                   color="primary"
                   icon="eva-funnel-outline"
                   text-color="white"
-                  class="bXYcolor--white q-mr-lg bXYbtn flex flex-center"
+                  class="AFJcolor--white q-mr-lg AFJbtn flex flex-center"
                   tag="a"
                   to="/auth"
                   v-else
@@ -165,7 +128,7 @@
           </div>
         </q-toolbar>
       </q-header>
-      <div class="bXYbg--p-w bXYmain__container">
+      <div class="AFJbg--p-w AFJmain__container">
         <router-view />
       </div>
     </q-page-container>
@@ -183,58 +146,15 @@ const linksList = [
   {
     active: false,
     typeFor: 0,
-    title: "Home",
+    title: "Accueil",
     caption: "quasar.dev",
     icon: "eva-home-outline",
     link: "/",
   },
   {
     active: false,
-    typeFor: 0,
-    title: "Livres",
-    caption: "github.com/quasarframework",
-    icon: "eva-grid-outline",
-    link: "/livres",
-  },
-
-  {
-    active: false,
-    typeFor: 0,
-    title: "Vos Favoris",
-    caption: "forum.quasar.dev",
-    icon: "eva-heart-outline",
-    link: "/favorits",
-  },
-  {
-    active: false,
-    typeFor: 11,
-    title: "Home admin",
-    caption: "forum.quasar.dev",
-    icon: "eva-layers-outline",
-    link: "/admin/home",
-  },
-  {
-    active: false,
-    typeFor: 11,
-    title: "Utilisateurs",
-    caption: "chat.quasar.dev",
-    icon: "eva-people-outline",
-    link: "/admin/users",
-  },
-
-  {
-    active: false,
-    typeFor: 11,
-    title: "Ajouter un livre",
-    caption: "forum.quasar.dev",
-    icon: "eva-plus-circle-outline",
-    link: "/admin/addlivre",
-  },
-
-  {
-    active: false,
     typeFor: 1,
-    title: "Paramettres",
+    title: "Params",
     caption: "Community Quasar projects",
     icon: "eva-settings-outline",
     link: "/paramettres",
