@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://github.com/aframevr/aframe/blob/master/dist/aframe-master.js"></script>
+    <script src="https://github.com/aframevr/aframe/blob/master/examples/js/play-on-click.js"></script>
+    <script src="https://github.com/aframevr/aframe/blob/master/examples/js/hide-on-play.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video
+          id="videoBunny"
+          preload="auto"
+          src="https://cdn.aframe.io/videos/bunny.mp4"
+          width="160"
+          height="90"
+          autoplay
+          loop="true"
+          crossorigin="anonymous"
+          muted
+        ></video>
+        <video
+          id="videoFireworks"
+          preload="auto"
+          src="https://cdn.aframe.io/videos/fireworks.mp4"
+          width="160"
+          height="90"
+          autoplay
+          loop="true"
+          crossorigin="anonymous"
+          muted
+        ></video>
+      </a-assets>
+
+      <!--
+      SOURCE
+      Title:  Big Buck Bunny
+      Author: Blender Institute
+      URL:    https://peach.blender.org/
+      -->
+      <a-entity
+        material="shader: flat; src: #videoBunny"
+        geometry="primitive: plane; width: 160; height: 90;"
+        position="0 60 -250"
+        rotation="0 35 0"
+        play-on-click
+        visible="false"
+      >
+      </a-entity>
+
+      <!--
+      SOURCE
+      Title:  Fireworks
+      Author: Motion Digital
+      URL:    https://www.videvo.net/profile/motiondigital/
+      -->
+      <a-entity
+        material="shader: flat; src: #videoFireworks"
+        geometry="primitive: plane; width: 160; height: 90"
+        position="0 -60 -200"
+        rotation="0 -35 0"
+        play-on-click
+        visible="false"
+      >
+      </a-entity>
+      <a-camera>
+        <a-entity
+          position="0 0 -1.5"
+          text="align: center;
+                width: 6;
+                wrapCount: 100;
+                color: black;
+                value: Click or tap to start video"
+          hide-on-play="#videoFireworks"
+        >
+        </a-entity>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

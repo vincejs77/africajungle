@@ -4,10 +4,7 @@
       <div class="q-mb-l q-mt-lg">
         <img src="others/13.png" style="max-width: 300px" />
       </div>
-      <h1 class="AFJfont--bold AFJfs--24 default-title">
-        Bon retour sur
-        <span class="text-primary">AfrikaJungle</span>
-      </h1>
+      <h1 class="AFJfont--bold AFJfs--24 default-title">Hello ! Bon retour</h1>
       <div>
         <q-form
           @submit="onSubmit"
@@ -75,7 +72,7 @@
             label="Sources"
             target="_blank"
             type="a"
-            href=""
+            href="https://github.com/vincejs77/africajungle"
           ></q-btn>
         </div>
       </div>

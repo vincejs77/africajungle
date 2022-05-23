@@ -66,7 +66,7 @@
             label="Sources"
             target="_blank"
             type="a"
-            href="https://github.com/vincejs77/bexpress.books"
+            href="https://github.com/vincejs77/africajungle"
           ></q-btn>
         </div>
       </div>
@@ -98,8 +98,8 @@ export default defineComponent({
     }
     function notifSucReg() {
       $q.notify({
-        message: "Votre compte a été créé",
-        type: "positive",
+        message: "Impossible de créer le compte",
+        type: "negative",
         progress: true,
         timeout: 5000,
       });

@@ -1,9 +1,9 @@
 <template>
   <q-page class="">
     <q-dialog v-model="dialogAuth" persistent>
-      <div>
+      <div class="scroll-y" style="overflow-y: scroll !important">
         <div class="AFJcontainer text-center flex flex-center justify-center">
-          <div class="AFJbg--w AFJbox" style="width: 400px">
+          <div class="AFJbg--w AFJbox">
             <div class="row justify-between">
               <div class="flex flex-center">
                 <q-item clickable tag="a" to="/" href="/" class="flex flex-center">
