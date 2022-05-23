@@ -4,10 +4,34 @@
     }
 }
 
+.AFJpage {
+    background: #3b589810 !important;
+}
+
+.logingFrame {
+    overflow-y: scroll !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .checkSreen {
+        display: none;
+    }
+}
+
+.-checkSreen {
+    display: block;
+}
+
+@media only screen and (min-width: 900px) {
+    .-checkSreen {
+        display: block;
+    }
+}
+
 .AFJ--a {
     color: #047c7c !important;
     text-decoration: none;
-    
+
     &:hover {
         text-decoration: underline;
     }

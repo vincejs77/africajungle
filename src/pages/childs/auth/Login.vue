@@ -2,7 +2,7 @@
   <div class="flex flex-center">
     <div>
       <div class="q-mb-l q-mt-lg">
-        <img src="others/13.png" style="max-width: 300px" />
+        <img src="others/13.png" class="q-mt-md" style="max-width: 300px" />
       </div>
       <h1 class="AFJfont--bold AFJfs--24 default-title">Hello ! Bon retour</h1>
       <div>

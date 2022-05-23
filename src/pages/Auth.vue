@@ -1,7 +1,7 @@
 <template>
   <q-page class="">
     <q-dialog v-model="dialogAuth" persistent>
-      <div class="scroll-y" style="overflow-y: scroll !important">
+      <div class="logingFrame">
         <div class="AFJcontainer text-center flex flex-center justify-center">
           <div class="AFJbg--w AFJbox">
             <div class="row justify-between">

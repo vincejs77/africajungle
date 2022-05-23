@@ -83,8 +83,13 @@
               :navigation="true"
               class="mySwiper"
             >
-              <swiper-slide v-for="data in vrDate" :key="data" v-bind="data">
-                <q-card class="AFJcard--rec">
+              <swiper-slide
+                v-for="data in vrDate"
+                :key="data"
+                v-bind="data"
+                class="bg-white"
+              >
+                <q-card class="AFJcard--rec bg-white">
                   <q-card-section class="header">
                     <img
                       :src="data.thumbnail"
@@ -195,7 +200,7 @@
               Lus récement
               <span class="AFJfont--medium AFJfs--14 AFJcolor--g q-ml-md">
                 <span> (Par vous </span>
-                <span class="AFJfont--bold AFJcolor--p"> 5 contenus </span>
+                <span class="AFJfont--bold AFJcolor--p"> 2 contenus </span>
                 <span> ) </span>
               </span>
             </div>

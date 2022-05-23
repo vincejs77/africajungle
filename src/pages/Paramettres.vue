@@ -2,7 +2,7 @@
   <q-page class="AFJpage">
     <div class="AFJpage__header row justify-center flex flex-center relative-position">
       <div class="text-center">
-        <h1 class="AFJfont--bold AFJfs--28">Paramettres</h1>
+        <h1 class="AFJfont--bold AFJfs--28">Paramètres</h1>
         <div class="q-mb-lg q-pt-xs">
           <p class="AFJcolor--g">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus at sint
@@ -111,7 +111,7 @@
                   />
                 </div>
                 <div class="AFJinput">
-                  <span class="label">Numeron de téléphone</span>
+                  <span class="label">Numéro de téléphone</span>
                   <q-input
                     filled
                     type="text"
