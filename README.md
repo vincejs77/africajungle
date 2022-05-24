@@ -13,7 +13,6 @@ Make the African of today relive his past in immersion.
 
 ## Prerequisites
 
-- PHP >= 5.3.7
 - NPM >= 6.13.4
 - Node >= 12.22.1
 
