@@ -12,7 +12,7 @@ Make the African of today relive his past in immersion.
 ![Logo](https://afrikajungle.vercel.app/logo.png)
 
 ## Prerequisites
-
+ 
 - NPM >= 6.13.4
 - Node >= 12.22.1
 
