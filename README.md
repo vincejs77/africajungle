@@ -14,7 +14,7 @@ Make the African of today relive his past in immersion.
 ## Prerequisites
  
 - NPM >= 6.13.4
-- Node >= 12.22.1
+- Node >= 12.22.1  
 
 ## Installations
 
